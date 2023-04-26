@@ -32,6 +32,7 @@ public void TC_01_() {
 	driver.get("http://live.techpanda.org/index.php/customer/account/login/");
 	
 //	- Bước 3: Click vào My Account để mở trang login ra
+	
 	// HLML của Element Email Textbox
 //	<input 
 //	type="email" 
@@ -39,6 +40,7 @@ public void TC_01_() {
 //	spellcheck="false" name="login[username]" 
 //	value="" id="email" 
 //	class="input-text required-entry validate-email" title="Email Address">
+	
 	// input <= thẻ của element này (tagname)
 	// attribute name - type autocapitalize autocorrect spellcheck...
 	// atrribute value - email none off...
