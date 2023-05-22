@@ -81,6 +81,30 @@ public void TC_02_Is_Enabled() {
 		System.out.println("Email Textbox is disabled");
 	}
 	
+	
+	//Education textbox
+	WebElement educationTextbox = driver.findElement(By.cssSelector("textarea#edu"));
+	if (educationTextbox.isEnabled()) {
+		System.out.println("educationTextbox is selected");
+	} else {
+		System.out.println("educationTextbox is de-selected");
+	}
+
+	//Job role 01 select
+		WebElement jobRole01Select = driver.findElement(By.cssSelector("select#job1"));
+		if (jobRole01Select.isEnabled()) {
+			System.out.println("jobRole01Select is enabled");
+		} else {
+			System.out.println("jobRole01Select is disabled");
+		}	
+		//Job role 02 select
+		WebElement jobRole02Select = driver.findElement(By.cssSelector("select#job2"));
+		if (jobRole02Select.isEnabled()) {
+			System.out.println("jobRole02Select is enabled");
+		} else {
+			System.out.println("jobRole02Select is disabled");
+		}
+		
 	// Password textbox
 	WebElement passwordTextbox = driver.findElement(By.cssSelector("input#disable_password"));
 	if (passwordTextbox.isEnabled()) {
@@ -95,8 +119,29 @@ public void TC_02_Is_Enabled() {
 	}
 @Test
 public void TC_03_Is_Selected() {
+	driver.get("https://automationfc.github.io/basic-form/index.html");
+	
+	//Age under 18 radio
+		WebElement ageUnder18Radio= driver.findElement(By.cssSelector("input#under_18"));
+		ageUnder18Radio.click();
+		if (ageUnder18Radio.isSelected()) {
+			System.out.println("ageUnder18Checkbox is selected");
+		} else {
+			System.out.println("ageUnder18Checkbox is de-selected");
+		}
+	//Java checkbox
+				WebElement javaCheckbox= driver.findElement(By.cssSelector("input#java"));
+				javaCheckbox.click();
+				if (javaCheckbox.isSelected()) {
+					System.out.println("javaCheckbox is selected");
+				} else {
+					System.out.println("javaCheckbox is de-selected");
+				}		
 
 	}
+
+
+	
 @AfterClass
 public void afterClass() {
 //driver.quit();
