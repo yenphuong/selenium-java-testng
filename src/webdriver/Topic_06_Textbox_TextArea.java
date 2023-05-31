@@ -53,7 +53,6 @@ public void TC_01_Textbox_TextArea() {
 	driver.findElement(By.cssSelector("input.orangehrm-lastname")).sendKeys(lastName);
 	
 	// luu gia tri employee id vao bien
-	
 	employeeID = driver.findElement(By.cssSelector("input.oxd-input.oxd-input--active")).getAttribute("value");
 	
 	
