@@ -98,6 +98,26 @@ public void TC_03_Default_Checkbox_Multiple() {
 	}
 	
 }
+public void TC_04_Default_Checkbox() {
+	driver.get("https://automationfc.github.io/multiple-fields/");
+	// click chon 1 checkbox neu chua duoc chon
+	checkToCheckbox(By.xpath("//label[contains(text(), 'Anemia')]/preceding-sibling::input"));
+	Assert.assertTrue(driver.findElement(By.xpath("//label[contains(text(), 'Anemia')]/preceding-sibling::input")).isSelected());
+	// bo chon
+	uncheckToCheckbox(By.xpath("//label[contains(text(), 'Anemia')]/preceding-sibling::input"));
+	Assert.assertFalse(driver.findElement(By.xpath("//label[contains(text(), 'Anemia')]/preceding-sibling::input")).isSelected());
+}
+public void checkToCheckbox (By by) {
+	if (!driver.findElement(by).isSelected()) {
+		driver.findElement(by).click();
+	}
+}
+
+public void uncheckToCheckbox (By by) {
+	if (driver.findElement(by).isSelected()) {
+		driver.findElement(by).click();
+	}
+}
 @AfterClass
 public void afterClass() {
 //driver.quit();
