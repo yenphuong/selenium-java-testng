@@ -17,14 +17,15 @@ String osName = System.getProperty("os.name");
 public void beforeClass() {
 	if (osName.contains("Mac")) { //Mac
 		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDrivers/geckodriver");
+		System.setProperty("webdriver.chrome.driver", projectPath + "/browserDrivers/chromedriver");
 	} else { //Windows
 		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 	}
 	
 	driver = new FirefoxDriver();
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.manage().window().maximize();
-	driver.get("https://www.facebook.com/");
 	}
 @Test
 public void TC_01_() {
