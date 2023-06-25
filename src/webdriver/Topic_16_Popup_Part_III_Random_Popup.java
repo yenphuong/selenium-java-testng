@@ -98,7 +98,7 @@ public class Topic_16_Popup_Part_III_Random_Popup {
 			driver.findElement(By.id("popup-name")).sendKeys("Testd-Demo");
 			driver.findElement(By.id("popup-email")).sendKeys(emailAddress);
 			driver.findElement(By.id("popup-phone")).sendKeys("0898777666");
-			sleepInSecond(3);=
+			sleepInSecond(3);
 
 			driver.findElement(By.id("close-popup")).click();
 			sleepInSecond(1);
