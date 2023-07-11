@@ -167,8 +167,9 @@ public class Topic_28_Wait_PVIII_Fluent {
 			}
 		});
 		Assert.assertTrue(status);
-		
+		Assert.assertTrue(status);
 		// test a comment ngày 11/7/2023 lúc 13:10
+		// test 2 
 	}
 	@AfterClass
 	public void afterClass() {
