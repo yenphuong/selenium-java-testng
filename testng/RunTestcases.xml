@@ -7,5 +7,7 @@
                <include name="testCase1" />
             </methods>
 		</classes>
+		
+		
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
