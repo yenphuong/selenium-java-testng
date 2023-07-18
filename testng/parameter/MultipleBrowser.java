@@ -38,7 +38,7 @@ public class MultipleBrowser {
 	}
 
 	@Parameters ("environment")
-	@Test
+	@Test  (invocationCount = 5)
 	public void TC_01_Login(String environmentName) {
 		driver.get(getEnvironmentUrl(environmentName) + "/index.php/customer/account/login/");
 		driver.findElement(emailTextbox).sendKeys("selenium_11_01@gmail.com");

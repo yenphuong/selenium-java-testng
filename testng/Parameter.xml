@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Parameter">
+<suite name="Parameter" parallel="tests" thread-count="3">
 <parameter name="environment" value="live" />
 	<test name="Run on Firefox browser">
 		<parameter name="browser" value="firefox" />

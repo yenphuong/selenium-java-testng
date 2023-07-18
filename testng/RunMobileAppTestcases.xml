@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Tiki - Mobile Automation UI">
+
+	<test name="Run on Samsung Galaxy S20">
+		<parameter name="device" value="s20" />
+		<parameter name="uuid" value="3947823" />
+		<parameter name="platform" value="android" />
+		<classes>
+			<class name="mobileApp.Customer" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Run on iPhone 12">
+		<parameter name="device" value="iPhone12" />
+		<parameter name="uuid" value="3947823" />
+		<parameter name="platform" value="ios" />
+		<classes>
+			<class name="mobileApp.Customer" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
